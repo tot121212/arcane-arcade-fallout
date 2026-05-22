@@ -28,7 +28,7 @@
                                            style="max-width:35px"
                                            value="{{ item.system.range.short }}" />ft
                             </td>
-                            <td>{{ item.system.range.short }} ft - {{ system.range.long }}ft</td>
+                            <td>{{#Multiply ../abilities.per.value item.system.range.short}}{{/Multiply}} ft - {{#Multiply ../abilities.per.value item.system.range.long}}{{/Multiply}}ft</td>
                             <td>
                                 <input id="range-form"
                                        type="number"
